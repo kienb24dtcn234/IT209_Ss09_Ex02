@@ -25,7 +25,8 @@ d766d06974fa: Pull complete
 dffc70821449: Download complete 
 Digest: sha256:df221db836e1754089190208cee7eeda94f233197056426eda74a43ab1abeac2
 Status: Downloaded newer image for nginx:alpine
-6efa808daf78ca766f7bd3daedc7502225a975810a1254597361fbd8f4c560a7```
+6efa808daf78ca766f7bd3daedc7502225a975810a1254597361fbd8f4c560a7
+```
 
 ## 2. Kiểm tra container đang chạy
 ```bash
@@ -35,7 +36,8 @@ docker ps
 CONTAINER ID   IMAGE                 COMMAND                  CREATED          STATUS                   PORTS                                         NAMES
 6efa808daf78   nginx:alpine          "/docker-entrypoint.…"   20 seconds ago   Up 20 seconds            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp       my-web
 2bf9cb40c995   langfuse/langfuse:2   "dumb-init -- ./web/…"   12 days ago      Up 8 minutes             0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   ptit_final_ai_integrated_007-langfuse-server-1
-e0a7fd682b64   postgres:16-alpine    "docker-entrypoint.s…"   12 days ago      Up 8 minutes (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp   ptit_final_ai_integrated_007-langfuse-db-1```
+e0a7fd682b64   postgres:16-alpine    "docker-entrypoint.s…"   12 days ago      Up 8 minutes (healthy)   0.0.0.0:5433->5432/tcp, [::]:5433->5432/tcp   ptit_final_ai_integrated_007-langfuse-db-1
+```
 
 ## 3. Truy vấn web bằng curl
 ```bash
@@ -68,7 +70,8 @@ security features and capabilities please refer to
 
 <p><em>Thank you for using nginx.</em></p>
 </body>
-</html>```
+</html>
+```
 
 ## 4. Dọn dẹp
 ```bash
@@ -78,7 +81,8 @@ docker stop my-web && docker rm my-web
 nguyenthekien@MacBookAir homework_session_09_ex2 % docker stop my-web && docker rm my-web
 
 my-web
-my-web```
+my-web
+```
 
 ---
 
